@@ -25,6 +25,12 @@ header ul{
     width: 10px;
     margin: 40px;
 }
+.socialLinks li a img{
+    transition: box-shadow .3s;
+}
+.socialLinks li a img:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .8);   
+}
 #menuLinks{
     width: 50%;
     margin: 40px auto;
@@ -35,6 +41,7 @@ header ul{
 }
 #menuLinks ul li a:hover{
     color: white;
+    font-size: 22px;
 }
 #menuLinks li a{
     color: #85586F;
@@ -107,6 +114,12 @@ footer ul li a{
     padding: 5px;
     margin: 40px;
 }
+footer ul li a img{
+    transition: box-shadow .3s;
+}
+footer ul li a img:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .8);
+}
 footer a{
     margin: 10px;
 }
@@ -130,6 +143,10 @@ footer button{
     background-color: #85586F;
     color: white;
     font-family: 'Nanum Myeongjo', serif;
+}
+footer button:hover{
+    box-shadow: 5px 5px rgb(211, 210, 210);
+    cursor: pointer;
 }
 /*Fin Estilos globales*/
 
@@ -218,6 +235,9 @@ footer button{
 .productosPage img:hover{
     cursor: pointer;
     opacity: 0.8;
+    width: 225px;
+    height: 225px;
+
 }
 /* Estilo de Pagina Contacto*/
 #contactForm {
