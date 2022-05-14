@@ -1,0 +1,312 @@
+/*Estilos globales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: #F8ECD1;
+    text-align: center;
+}
+header nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+header ul{
+    list-style-type: none;
+}
+.socialLinks{
+    display: flex;
+}
+.socialLinks li{
+    width: 10px;
+    margin: 40px;
+}
+#menuLinks{
+    width: 50%;
+    margin: 40px auto;
+}
+#menuLinks ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#menuLinks ul li a:hover{
+    color: white;
+}
+#menuLinks li a{
+    color: #85586F;
+    text-decoration: none;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+h1{
+    color: #85586F;
+    font-family:'Square Peg', cursive;
+    font-size: 140px;
+    padding: 55px;
+    text-align: center;
+}
+h2{
+    color: #85586F;
+    font-family:'Square Peg', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin: 40px;
+    font-size: 80px;
+}
+h3{
+    color: #85586F;
+    padding: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 50px;
+}
+img {
+    color: #85586F;   
+    font-weight: bold;
+}
+body{
+    background-color: #F8ECD1;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.mainImage{
+    background-image: url('../images/imgprincipal.jpg');
+    opacity: 0.7;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+.mainContent{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.footerSocialLinks li{
+    display: inline-block;
+    margin: 0 40px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    width: 20%;
+    width: 20px;
+    display: inline-block;
+    padding: 5px;
+    margin: 40px;
+}
+footer a{
+    margin: 10px;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    color: #85586F;
+}
+footer input{
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+footer button{
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: bold;
+    background-color: #85586F;
+    color: white;
+    font-family: 'Nanum Myeongjo', serif;
+}
+/*Fin Estilos globales*/
+
+/*Estilo de Index*/
+.mainContent article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    color: #AC7D88; 
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    padding: 50px;
+}
+.mainContent article p{
+    padding:10px;
+}
+.newsLetterForm{
+    padding: 30px;
+    text-align: center;
+}
+.newsL{
+    color: #85586F; 
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', serif;
+}
+/* Estilo de Pagina Nosotros*/
+.nosotrosPage p{
+    padding: 0 400px 0 400px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #AC7D88;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+/* Estilo de Pagina Tratamientos*/
+.tratamientosPage p.ttosubtitle{
+    display: inline;
+    line-height: 1.5;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #AC7D88;
+    font-weight: bold;
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    text-align: left;
+}
+.tratamientosPage p.ttodescription{
+    line-height: 1.5;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #AC7D88;
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: left;
+}
+.tratamientosPage article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    text-align: left;
+}
+.tratamientosPage img{
+    width: 600px;
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+}
+/* Estilo de Pagina Productos*/
+.productosImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    justify-items: center;
+}
+.productosPage img{
+    margin: 40px;
+}
+.productosPage img:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/* Estilo de Pagina Contacto*/
+#contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+#contactForm input{
+    width: 450px;
+    line-height: 3;
+    margin: 20px auto;
+}
+#contactForm textarea{
+    width: 450px;
+}
+#contactForm button{
+    margin: 10px;
+    width: 450px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #85586F;
+    color: white;
+    font-family: 'Nanum Myeongjo', seri;
+}
+.mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    margin: auto;
+    width: 600px;
+}
+/*Media Queries*/
+@media (max-width: 1150px){
+    h3{
+        font-size: 45px;
+    }
+}
+@media (max-width: 1100px){
+    .nosotrosPage p{
+        padding: 0 200px 0 200px;
+    }
+    .tratamientosPage p.ttosubtitle p.ttodescription{
+        width: auto;
+    }
+    .tratamientosPage p.ttosubtitle{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 115px;
+    }
+    #menuLinks li a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 610px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 580px){
+    .nosotrosPage p{
+        padding: 0 100px 0 100px;
+    }
+}
+@media (max-width: 518px) {
+    .newsLetterForm form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .newsLetterForm form input{
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 480px){
+    .mainContent article {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 75px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+    }
+}
