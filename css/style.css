@@ -161,7 +161,6 @@ footer button:hover{
     font-weight: bold;
     text-align: center;
     width: 50%;
-    padding: 50px;
 }
 .mainContent article p{
     padding:10px;
@@ -237,7 +236,6 @@ footer button:hover{
     opacity: 0.8;
     width: 225px;
     height: 225px;
-
 }
 /* Estilo de Pagina Contacto*/
 #contactForm {
@@ -288,11 +286,23 @@ footer button:hover{
     }
 }
 @media (max-width: 768px) {
+    header{
+       position: inherit;
+    }
     h1 {
         font-size: 115px;
     }
-    #menuLinks li a {
-        font-size: 14px;
+    #menuLinks ul{
+        flex-direction: column;
+    }
+    #menuLinks ul li{
+        line-height: 1.5;
+    }
+    .socialLinks{
+        display: none;
+    } 
+    .mainImage{
+        width: 110%;
     }
 }
 @media (max-width: 610px) {
@@ -330,3 +340,64 @@ footer button:hover{
         font-size: 60px;
     }
 }
+@media (min-width: 320px) and (max-width:480px){
+    h1 {
+        font-size: 50px;
+    }
+    .mainImage{
+        width: auto;
+    }
+    h2{
+        font-size: 40px;
+    }
+    #aticles article{
+        align-items: center;
+    }
+    .tratamientosPage p.ttosubtitle {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .tratamientosPage img{
+        height: 40vh;
+        width: 200px;    
+    }
+    .ttodescription{
+        display: none;
+    }
+    .tratamientosPage article{
+        grid-template-columns: 1fr;
+        height: 220px;
+    }
+    .tratamientosPage article div{
+        display: flex;
+        justify-content: center;
+    }
+    .tratamientosPage p.ttosubtitle {
+        width: auto;
+    }
+    .nosotrosPage p {
+        padding: 0 10px 0 10px;
+    }
+    .productosImg{
+        grid-template-columns: 1fr;
+    }
+    #contactForm input{
+        width: 250px;
+    }
+    #contactForm textarea{
+        width: 250px;
+    }
+    #contactForm button{
+        width: 250px;
+    }
+    .mapouter{
+        text-align: justify;
+    }
+    .footerSocialLinks li a{
+        margin: 0 20px;
+    }
+    footer div p{
+        font-size: 12px;
+    }
+}
+
