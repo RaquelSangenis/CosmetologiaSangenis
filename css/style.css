@@ -222,28 +222,28 @@ footer button:hover{
     height: 225px;
 }
 /* Estilo de Pagina Contacto*/
-#contactForm {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-#contactForm input{
-    width: 450px;
-    line-height: 3;
-    margin: 20px auto;
-}
-#contactForm textarea{
-    width: 450px;
-}
-#contactForm button{
-    margin: 10px;
-    width: 450px;
-    line-height: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #85586F;
-    color: white;
+.container{
     font-family: 'Nanum Myeongjo', seri;
+    font-weight: bold;
+    color:#85586F
+}
+form.row.g-3{
+    justify-content: center;
+}
+.col-12 {
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: #85586F;
+    border: #85586F;
+    justify-content: center;
+}
+aside{
+    margin-top: 40px;
+}
+.btn:hover {
+    background-color: #85586F;
+    box-shadow: 5px 5px rgb(211, 210, 210);
 }
 .mapouter {
     position: relative;
@@ -384,10 +384,6 @@ footer button:hover{
         font-size: 12px;
     }
 }
-
-
-
-
 
 
 
