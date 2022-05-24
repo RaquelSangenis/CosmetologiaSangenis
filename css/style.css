@@ -177,7 +177,7 @@ footer button:hover{
     color: #AC7D88;
     font-weight: bold;
     width: 500px;
-    margin-top: 40px;
+    margin-top: 6z0px;
     margin-bottom: 40px;
     font-size: 50px;
     text-align: left;
@@ -270,8 +270,14 @@ aside{
     }
 }
 @media (max-width: 768px) {
+    body{
+        max-width: fit-content;
+    };
     header{
        position: inherit;
+    }
+    .navbar-expand-lg {
+        width: 110%;
     }
     h1 {
         font-size: 115px;
