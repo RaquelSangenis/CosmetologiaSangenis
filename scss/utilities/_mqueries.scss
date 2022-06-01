@@ -1,0 +1,138 @@
+/*Media Queries*/
+@media (max-width: 1150px){
+    h3{
+        font-size: 45px;
+    }
+}
+@media (max-width: 1100px){
+    .nosotrosPage p{
+        padding: 0 200px 0 200px;
+    }
+    .tratamientosPage p.ttosubtitle p.ttodescription{
+        width: auto;
+    }
+    .tratamientosPage p.ttosubtitle{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        max-width: fit-content;
+    };
+    header{
+       position: inherit;
+    }
+    .navbar-expand-lg {
+        width: 110%;
+    }
+    h1 {
+        font-size: 115px;
+    }
+    #menuLinks ul{
+        flex-direction: column;
+    }
+    #menuLinks ul li{
+        line-height: 1.5;
+    }
+    .socialLinks{
+        display: none;
+    } 
+    .mainImage{
+        width: 110%;
+    }
+}
+@media (max-width: 610px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 580px){
+    .nosotrosPage p{
+        padding: 0 100px 0 100px;
+    }
+}
+@media (max-width: 518px) {
+    .newsLetterForm form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .newsLetterForm form input{
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 480px){
+    .mainContent article {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 75px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+@media (min-width: 320px) and (max-width:480px){
+    h1 {
+        font-size: 50px;
+    }
+    .mainImage{
+        width: auto;
+    }
+    h2{
+        font-size: 40px;
+    }
+    #aticles article{
+        align-items: center;
+    }
+    .tratamientosPage p.ttosubtitle {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .tratamientosPage img{
+        height: 40vh;
+        width: 200px;    
+    }
+    .ttodescription{
+        display: none;
+    }
+    .tratamientosPage article{
+        grid-template-columns: 1fr;
+        height: 220px;
+    }
+    .tratamientosPage article div{
+        display: flex;
+        justify-content: center;
+    }
+    .tratamientosPage p.ttosubtitle {
+        width: auto;
+    }
+    .nosotrosPage p {
+        padding: 0 10px 0 10px;
+    }
+    .productosImg{
+        grid-template-columns: 1fr;
+    }
+    #contactForm input{
+        width: 250px;
+    }
+    #contactForm textarea{
+        width: 250px;
+    }
+    #contactForm button{
+        width: 250px;
+    }
+    .mapouter{
+        text-align: justify;
+    }
+    .footerSocialLinks li a{
+        margin: 0 20px;
+    }
+    footer div p{
+        font-size: 12px;
+    }
+}

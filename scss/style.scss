@@ -1,0 +1,259 @@
+
+@import "utilities/variables";
+@import "utilities/mqueries";
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*Estilos globales*/
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: $secondarycolor
+}
+header nav{
+    display: flex;  
+}
+header ul{
+    list-style-type: none;
+}
+.container-fluid{
+    display: flex;
+    background-color: $principalcolor;
+    padding: 20px;  
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: $positioncenter;
+}
+li.nav-item{
+    font-family: $principalfont;
+    font-weight: bold;
+    font-size: 20px;  
+    margin-left: 30px;
+}
+a.nav-link{
+    color:#F8ECD1
+}
+h1{
+    color: $principalcolor;
+    font-family:$secondaryfont;
+    font-size: 140px;
+    font-weight: bolder;
+    padding: 55px;
+    text-align: $positioncenter;
+}
+h2{
+    color: $principalcolor;
+    font-family:$secondaryfont;
+    font-size: 60px;
+    text-align: $positioncenter;
+    margin: 40px;
+    font-size: 80px;
+}
+h3{
+    color: $principalcolor;
+    padding: 10px;
+    font-family: $principalfont;
+    font-size: 50px;
+}
+img {
+    color: $principalcolor;   
+    font-weight: bold;
+}
+body{
+    background-color: $secondarycolor;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.mainImage{
+    background-image: url('../images/imgprincipal.jpg');
+    opacity: 0.7;
+    width: auto;
+    background-size: cover;
+    background-position: $positioncenter;
+}
+.mainContent{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: $positioncenter
+}
+.footerSocialLinks li{
+    display: inline-block;
+    margin: 0 40px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    width: 20%;
+    width: 20px;
+    display: inline-block;
+    padding: 5px;
+    margin: 40px;
+}
+footer ul li a img{
+    transition: box-shadow .3s;
+}
+footer ul li a img:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .8);
+}
+footer a{
+    margin: 10px;
+}
+footer p{
+    text-align: $positioncenter;
+    padding-bottom: 20px;
+    font-family: $principalfont;
+    font-weight: bold;
+    color: $principalcolor;
+}
+footer input{
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+footer button{
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: bold;
+    background-color: $principalcolor;
+    color: white;
+    font-family: $principalfont;
+}
+footer button:hover{
+    box-shadow: 5px 5px rgb(211, 210, 210);
+    cursor: pointer;
+}
+/*Fin Estilos globales*/
+
+/*Estilo de Index*/
+.mainContent article{
+    display: flex;
+    flex-direction: column;
+    justify-content: $positioncenter;
+    margin: auto;
+    color: $thirdcolor; 
+    font-family: $principalfont;
+    font-weight: bold;
+    text-align: $positioncenter;
+    width: 50%;
+}
+.mainContent article p{
+    padding:10px;
+}
+.newsLetterForm{
+    padding: 30px;
+    text-align: $positioncenter;
+}
+.newsL{
+    color: $principalcolor; 
+    font-weight: bold;
+    font-family: $principalfont;
+}
+/* Estilo de Pagina Nosotros*/
+.nosotrosPage p{
+    padding: 0 400px 0 400px;
+    text-align: $positioncenter;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: $principalfont;
+    color: $thirdcolor;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+/* Estilo de Pagina Tratamientos*/
+.tratamientosPage p.ttosubtitle{
+    display: inline;
+    line-height: 1.5;
+    font-family: $principalfont;
+    color: $thirdcolor;
+    font-weight: bold;
+    width: 500px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    text-align: left;
+}
+.tratamientosPage p.ttodescription{
+    line-height: 1.5;
+    font-family: $principalfont;
+    color: $thirdcolor;
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: left;
+}
+.tratamientosPage article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    text-align: left;
+}
+.tratamientosPage img{
+    width: 600px;
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+}
+/* Estilo de Pagina Productos*/
+.productosImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    justify-items: $positioncenter;
+}
+.productosPage img{
+    margin: 40px;
+}
+.productosPage img:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    width: 225px;
+    height: 225px;
+}
+/* Estilo de Pagina Contacto*/
+.container{
+    font-family: 'Nanum Myeongjo', seri;
+    font-weight: bold;
+    color:$principalcolor
+}
+form.row.g-3{
+    justify-content: $positioncenter;
+}
+.col-12 {
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: $principalcolor;
+    border: $principalcolor;
+    justify-content: $positioncenter;
+}
+aside{
+    margin-top: 40px;
+}
+.btn:hover {
+    background-color: $principalcolor;
+    box-shadow: 5px 5px rgb(211, 210, 210);
+}
+.mapouter {
+    position: relative;
+    text-align: $positioncenter;
+    height: 300px;
+    margin: auto;
+    width: 600px;
+}
+
