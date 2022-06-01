@@ -1,0 +1,506 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*Estilos globales*/
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #F8ECD1;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #85586F;
+  padding: 20px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+li.nav-item {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+a.nav-link {
+  color: #F8ECD1;
+}
+
+h1 {
+  color: #85586F;
+  font-family: "Square Peg", cursive;
+  font-size: 140px;
+  font-weight: bolder;
+  padding: 55px;
+  text-align: center;
+}
+
+h2 {
+  color: #85586F;
+  font-family: "Square Peg", cursive;
+  font-size: 60px;
+  text-align: center;
+  margin: 40px;
+  font-size: 80px;
+}
+
+h3 {
+  color: #85586F;
+  padding: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 50px;
+}
+
+img {
+  color: #85586F;
+  font-weight: bold;
+}
+
+body {
+  background-color: #F8ECD1;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainImage {
+  background-image: url("../images/imgprincipal.jpg");
+  opacity: 0.7;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainContent {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerSocialLinks li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li a {
+  width: 20%;
+  width: 20px;
+  display: inline-block;
+  padding: 5px;
+  margin: 40px;
+}
+
+footer ul li a img {
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+footer ul li a img:hover {
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
+}
+
+footer a {
+  margin: 10px;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  color: #85586F;
+}
+
+footer input {
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+footer button {
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: bold;
+  background-color: #85586F;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+footer button:hover {
+  -webkit-box-shadow: 5px 5px #d3d2d2;
+          box-shadow: 5px 5px #d3d2d2;
+  cursor: pointer;
+}
+
+/*Fin Estilos globales*/
+/*Estilo de Index*/
+.mainContent article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  color: #AC7D88;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+}
+
+.mainContent article p {
+  padding: 10px;
+}
+
+.newsLetterForm {
+  padding: 30px;
+  text-align: center;
+}
+
+.newsL {
+  color: #85586F;
+  font-weight: bold;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+/* Estilo de Pagina Nosotros*/
+.nosotrosPage p {
+  padding: 0 400px 0 400px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Nanum Myeongjo", serif;
+  color: #AC7D88;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* Estilo de Pagina Tratamientos*/
+.tratamientosPage p.ttosubtitle {
+  display: inline;
+  line-height: 1.5;
+  font-family: "Nanum Myeongjo", serif;
+  color: #AC7D88;
+  font-weight: bold;
+  width: 500px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  text-align: left;
+}
+
+.tratamientosPage p.ttodescription {
+  line-height: 1.5;
+  font-family: "Nanum Myeongjo", serif;
+  color: #AC7D88;
+  width: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.tratamientosPage article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 500px;
+  text-align: left;
+}
+
+.tratamientosPage img {
+  width: 600px;
+  height: 400px;
+  margin-left: 100px;
+  margin-right: 100px;
+  float: left;
+}
+
+/* Estilo de Pagina Productos*/
+.productosImg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  justify-items: center;
+}
+
+.productosPage img {
+  margin: 40px;
+}
+
+.productosPage img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  width: 225px;
+  height: 225px;
+}
+
+/* Estilo de Pagina Contacto*/
+.container {
+  font-family: 'Nanum Myeongjo', seri;
+  font-weight: bold;
+  color: #85586F;
+}
+
+form.row.g-3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col-12 {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #85586F;
+  border: #85586F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside {
+  margin-top: 40px;
+}
+
+.btn:hover {
+  background-color: #85586F;
+  -webkit-box-shadow: 5px 5px #d3d2d2;
+          box-shadow: 5px 5px #d3d2d2;
+}
+
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 300px;
+  margin: auto;
+  width: 600px;
+}
+
+/*Media Queries*/
+@media (min-width: 769px) and (max-width: 1200px) {
+  h3 {
+    font-size: 45px;
+  }
+  .nosotrosPage p {
+    padding: 0 200px 0 200px;
+  }
+  .tratamientosPage p.ttosubtitle p.ttodescription {
+    width: auto;
+  }
+  .tratamientosPage p.ttosubtitle {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  header {
+    position: inherit;
+  }
+  .navbar-expand-lg {
+    width: 110%;
+  }
+  #menuLinks ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menuLinks ul li {
+    line-height: 1.5;
+  }
+  .socialLinks {
+    display: none;
+  }
+  .mainImage {
+    width: 110%;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .nosotrosPage p {
+    padding: 0 100px 0 100px;
+  }
+  .newsLetterForm form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .newsLetterForm form input {
+    margin-bottom: 5px;
+  }
+  .mainContent article {
+    width: 80%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 60px;
+  }
+  .navbar-expand-lg {
+    width: 110%;
+  }
+  .mainImage {
+    width: 110%;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .mainContent article p {
+    font-size: 10px;
+  }
+  .tratamientosPage p.ttosubtitle {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .tratamientosPage img {
+    height: 40vh;
+    width: 200px;
+    margin-left: 138px;
+  }
+  .ttodescription {
+    display: none;
+  }
+  .tratamientosPage article {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 220px;
+  }
+  .tratamientosPage article div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tratamientosPage p.ttosubtitle {
+    width: auto;
+  }
+  .nosotrosPage p {
+    padding: 0 10px 0 10px;
+    font-size: 10px;
+  }
+  .productosImg {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .newsLetterForm form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  #contactForm input {
+    width: 250px;
+  }
+  #contactForm textarea {
+    width: 250px;
+  }
+  #contactForm button {
+    width: 250px;
+  }
+  .mapouter {
+    margin-left: -54px;
+  }
+  .footerSocialLinks ul {
+    padding: 0px;
+  }
+  .footerSocialLinks li a {
+    margin: 0 20px;
+  }
+  footer button {
+    font-size: 19px;
+    font-weight: lighter;
+  }
+  footer div p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
