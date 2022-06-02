@@ -1,0 +1,6 @@
+@mixin titles ($color: #85586F, $fontFamily: "Square Peg, cursive", $fontSize: 140px, $fontWeight: normal){
+    color: $color;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}

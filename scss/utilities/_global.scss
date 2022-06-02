@@ -1,22 +1,20 @@
+@import "utilities/mixin";
+@import "utilities/extend";
+@import "utilities/nesting";
+
 /*reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*Estilos globales*/
 }
-
+/*Estilos globales*/
 header{
     position: sticky;
     top: 0;
     background-color: $secondarycolor
 }
-header nav{
-    display: flex;  
-}
-header ul{
-    list-style-type: none;
-}
+
 .container-fluid{
     display: flex;
     background-color: $principalcolor;
@@ -35,26 +33,19 @@ a.nav-link{
     color:#F8ECD1
 }
 h1{
-    color: $principalcolor;
-    font-family:$secondaryfont;
-    font-size: 140px;
-    font-weight: bolder;
+    @include titles($principalcolor, $secondaryfont, 140px, bold);
     padding: 55px;
     text-align: $positioncenter;
 }
 h2{
-    color: $principalcolor;
-    font-family:$secondaryfont;
-    font-size: 60px;
+    @include titles($principalcolor, $secondaryfont, 80px, bold);
     text-align: $positioncenter;
     margin: 40px;
-    font-size: 80px;
 }
 h3{
+    @include titles($principalcolor, $principalfont, 60px);
     color: $principalcolor;
     padding: 10px;
-    font-family: $principalfont;
-    font-size: 50px;
 }
 img {
     color: $principalcolor;   
@@ -64,8 +55,7 @@ body{
     background-color: $secondarycolor;
 }
 main {
-    display: flex;
-    flex-direction: column;
+    @extend flexColumn;
 }
 .mainImage{
     background-image: url('../images/imgprincipal.jpg');
@@ -76,69 +66,22 @@ main {
 }
 .mainContent{
     padding: 40px;
-    display: flex;
-    flex-direction: column;
+    @extend flexColumn;
 }
 footer{
     height: 200px;
-    display: flex;
-    flex-direction: column;
+    @extend flexColumn;
     align-items: $positioncenter
 }
 .footerSocialLinks li{
     display: inline-block;
     margin: 0 40px;
 }
-footer ul{
-    list-style-type: none;
-}
-footer ul li a{
-    width: 20%;
-    width: 20px;
-    display: inline-block;
-    padding: 5px;
-    margin: 40px;
-}
-footer ul li a img{
-    transition: box-shadow .3s;
-}
-footer ul li a img:hover{
-    box-shadow: 0 0 11px rgba(33, 33, 33, .8);
-}
-footer a{
-    margin: 10px;
-}
-footer p{
-    text-align: $positioncenter;
-    padding-bottom: 20px;
-    font-family: $principalfont;
-    font-weight: bold;
-    color: $principalcolor;
-}
-footer input{
-    line-height: 40px;
-    font-size: 14px;
-    padding: 0 20px;
-}
-footer button{
-    line-height: 40px;
-    font-size: 14px;
-    padding: 0 20px;
-    font-weight: bold;
-    background-color: $principalcolor;
-    color: white;
-    font-family: $principalfont;
-}
-footer button:hover{
-    box-shadow: 5px 5px rgb(211, 210, 210);
-    cursor: pointer;
-}
 /*Fin Estilos globales*/
 
 /*Estilo de Index*/
 .mainContent article{
-    display: flex;
-    flex-direction: column;
+    @extend flexColumn;
     justify-content: $positioncenter;
     margin: auto;
     color: $thirdcolor; 
@@ -170,41 +113,8 @@ footer button:hover{
     font-weight: bold;
     margin-bottom: 50px;
 }
-/* Estilo de Pagina Tratamientos*/
-.tratamientosPage p.ttosubtitle{
-    display: inline;
-    line-height: 1.5;
-    font-family: $principalfont;
-    color: $thirdcolor;
-    font-weight: bold;
-    width: 500px;
-    margin-bottom: 40px;
-    font-size: 50px;
-    text-align: left;
-}
-.tratamientosPage p.ttodescription{
-    line-height: 1.5;
-    font-family: $principalfont;
-    color: $thirdcolor;
-    width: 500px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 20px;
-    text-align: left;
-}
-.tratamientosPage article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
-    text-align: left;
-}
-.tratamientosPage img{
-    width: 600px;
-    height: 400px;
-    margin-left: 100px;
-    margin-right: 100px;
-    float: left;
-}
+/* Estilo de Pagina Tratamientos en _nesting.scss*/
+
 /* Estilo de Pagina Productos*/
 .productosImg{
     display: grid;
@@ -212,15 +122,7 @@ footer button:hover{
     column-gap: 5px;
     justify-items: $positioncenter;
 }
-.productosPage img{
-    margin: 40px;
-}
-.productosPage img:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    width: 225px;
-    height: 225px;
-}
+
 /* Estilo de Pagina Contacto*/
 .container{
     font-family: 'Nanum Myeongjo', seri;
