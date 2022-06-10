@@ -205,6 +205,10 @@ footer {
   font-weight: bold;
   margin-bottom: 50px; }
 
+#nosotrosImg {
+  width: 30%;
+  margin: auto; }
+
 /* Estilo de Pagina Tratamientos en _nesting.scss*/
 /* Estilo de Pagina Productos*/
 .productosImg {
