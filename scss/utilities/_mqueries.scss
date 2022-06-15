@@ -43,7 +43,29 @@
     .nosotrosPage p{
         padding: 0 100px 0 100px;
     }
+    .tratamientosPage img {
+        margin-left: 40px;
+    }
 
+    .tratamientosPage article {
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .tratamientosPage article div{
+        display: grid;
+    }
+    .tratamientosPage p.ttosubtitle {
+        font-size: 28px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        width: 380px;
+    }
+
+    .tratamientosPage p.ttodescription{
+        font-size: 16px;
+        width: 380px;
+    }
     .newsLetterForm form{
         display: flex;
         flex-direction: column;
@@ -61,7 +83,7 @@
 
 @media (min-width: 320px) and (max-width:480px){
     h1 {
-        font-size: 60px;
+
     }
     .navbar-expand-lg {
         width: 110%;
@@ -78,7 +100,7 @@
         font-size: 20px;
     }
     .mainContent article p {
-        font-size: 10px;
+        font-size: 16px;
     }
     .tratamientosPage p.ttosubtitle {
         font-size: 20px;

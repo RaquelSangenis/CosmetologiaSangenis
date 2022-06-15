@@ -78,11 +78,8 @@ footer button:hover {
   text-align: left; }
 
 .tratamientosPage img {
-  width: 600px;
-  height: 400px;
-  margin-left: 100px;
-  margin-right: 100px;
-  float: left; }
+  width: 80%;
+  margin-left: 20px; }
 
 .productosPage img {
   margin: 40px; }
@@ -278,6 +275,21 @@ aside {
     font-size: 80px; }
   .nosotrosPage p {
     padding: 0 100px 0 100px; }
+  .tratamientosPage img {
+    margin-left: 40px; }
+  .tratamientosPage article {
+    height: auto;
+    margin-bottom: 50px; }
+  .tratamientosPage article div {
+    display: grid; }
+  .tratamientosPage p.ttosubtitle {
+    font-size: 28px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    width: 380px; }
+  .tratamientosPage p.ttodescription {
+    font-size: 16px;
+    width: 380px; }
   .newsLetterForm form {
     display: flex;
     flex-direction: column;
@@ -288,8 +300,6 @@ aside {
     width: 80%; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  h1 {
-    font-size: 60px; }
   .navbar-expand-lg {
     width: 110%; }
   .mainImage {
@@ -301,7 +311,7 @@ aside {
   h3 {
     font-size: 20px; }
   .mainContent article p {
-    font-size: 10px; }
+    font-size: 16px; }
   .tratamientosPage p.ttosubtitle {
     font-size: 20px;
     margin-top: 0px; }
